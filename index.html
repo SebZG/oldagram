@@ -1,9 +1,54 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <img src="images/logo.png">
-        <script src="index.js"></script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oldagram</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <Header>
+        <img src="./images/logo.png" alt="Oldagram's logo">
+        <img src="./images/user-avatar.png" alt="User's avatar">
+    </Header>
+
+    <main>
+        <section class="post">
+            <div class="user">
+                <img src="" alt="user's avatar">
+                <div class="name-location-wrapper">
+                    <p class="full-name"></p>
+                    <p class="location"></p>
+                </div>
+            </div>
+            <div class="content">
+                <img src="" alt="post content">
+            </div>
+            <div class="icons-wrapper">
+                <button><img src="./images/icon-heart.png" alt="heart icon"></button>
+                <button><img src="./images/icon-comment.png" alt="comments icon"></button>
+                <button><img src="./images/icon-dm.png" alt="share icon"></button>
+            </div>
+            <div class="likes">
+                <p></p>
+            </div>
+            <div class="comments">
+                <p class="comments-username"></p>
+                <p class="comments-comment"></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
 </html>
