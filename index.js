@@ -61,4 +61,4 @@ mainEl.innerHTML = posts.map(p => `
             </div>
             
         </section>
-`);
+`).join("");
