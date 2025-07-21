@@ -17,7 +17,7 @@ const posts = [
         comment: "i'm feelin a bit stressed tbh",
         likes: 4
     },
-        {
+    {
         name: "Joseph Ducreux",
         username: "jd1735",
         location: "Paris, France",
@@ -26,5 +26,39 @@ const posts = [
         comment: "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
         likes: 152
     }
-]
+];
 
+const mainEl = document.querySelector("main");
+
+mainEl.innerHTML = posts.map(p => `
+        <section class="post">
+
+            <div class="user-wrapper">
+                <img src="${p.avatar}" alt="user's avatar">
+                <div class="name-location-wrapper">
+                    <p class="full-name">${p.name}</p>
+                    <p class="location">${p.location}</p>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <img src="${p.post}" alt="post content">
+            </div>
+
+            <div class="icons-wrapper">
+                <button><img src="./images/icon-heart.png" alt="heart icon"></button>
+                <button><img src="./images/icon-comment.png" alt="comments icon"></button>
+                <button><img src="./images/icon-dm.png" alt="share icon"></button>
+            </div>
+
+            <div class="likes-wrapper">
+                <p>${p.likes} likes</p>
+            </div>
+
+            <div class="comments-wrapper">
+                <p class="comments-username">${p.username}</p>
+                <p class="comments-comment">${p.comment}</p>
+            </div>
+            
+        </section>
+`);
